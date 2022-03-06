@@ -154,7 +154,7 @@ links_layout: block
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-#avatar: /images/avatar.gif
+avatar: /images/49786633.jpeg
 
 # Table Of Contents in the Sidebar
 toc:
@@ -182,9 +182,9 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
+  # display: post
   #display: always
-  #display: hide
+  display: hide
   #display: remove
 
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
@@ -607,7 +607,7 @@ local_search:
   enable: false
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
-  trigger: manual
+  trigger: auto
   # show top n results per article, show all results by setting to -1
   top_n_per_article: 1
 
