@@ -1,9 +1,7 @@
 ---
 title: typecript，让类型约束成为一种习惯
 date: 2022-01-08 18:36:31
-tags: 
--typescript
--类型编程
+tags: -typescript -类型编程
 description: 伴随着ts4.3的发布，ts4.4也已经处于beta阶段了，ts成为了一个前端规范的趋势，随之vue、react和其他的plugin都开始了使用ts进行编写，ts已经成为了一个前端开发者所必需熟悉的一个东西。能否写出准确的ts类型也成为了一段代码的质量的评判条件之一
 ---
 ## 基础知识概述
@@ -614,5 +612,3 @@ export declare type ProSchema<T = Record<string, unknown>, Extra = unknown, V = 
     }) => React.ReactNode;
 }
 ```
-
-###### 处于一个Protable的复杂度，这里只截取了其中的一小段。可以看到我们会把传入的一行的类型到做参数T传进来，在dataIndex和render这里直接把T当作一个类型使用
