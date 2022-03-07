@@ -1,10 +1,11 @@
 ---
 title: 你不知道的TypeScript
 date: 2022-03-06 15:14:33
-tags: typescript 基础知识
-description: 总结ts的类型层级、枚举、断言等相关知识，更加深入的了解typescript
+tags: 
+-typescript
+-基础知识
+description: 总结ts的类型层级、枚举、断言等相关知识，更加深入的了解typescript， 让typescript更好的服务于日常的开发，提高开发效率
 ---
-
 # 基础概括
 
 ## 1.1 枚举
@@ -99,7 +100,8 @@ foo('no') // ok!
 
 相比于枚举类型的数字，字符串还是比较好理解的，同时对入参的格式限制也还是有比较准确的定义，可以很好的检查出存不存在乱传参的行为。
 
-1.1.3 运行时的枚举
+### 1.1.3 运行时的枚举
+
 上文说到枚举是少数的会参与代码运行的ts的内容之一，因此枚举是会被编译成js代码的。
 以简单的NoYes枚举为例：
 
@@ -194,15 +196,15 @@ export const StatusEnum = {
 
 对象枚举的优点：
 
-```markdown
-将旧的js代码改造成ts更加的方便
-可以对键值加计算逻辑
-枚举值可以是Symbol类型
 
-对象枚举的缺点
-无法反向映射
-对于枚举值的类型描述困难，透传的时候不好去描述类型（可以自己写一个ValueOf工具类型，但是有理解成本，如下代码）
-```
+> 将旧的js代码改造成ts更加的方便
+> 可以对键值加计算逻辑
+> 枚举值可以是Symbol类型
+> 
+> 对象枚举的缺点
+> 无法反向映射
+> 对于枚举值的类型描述困难，透传的时候不好去描述类型（可以自己写一个ValueOf工具类型，但是有理解成本，如下代码）
+
 
 ```typescript
 export const NoYes = {
@@ -276,12 +278,12 @@ foo1(obj1)； // ok！！
 
 说起类型收窄，我们首先可以想到的在js中所拥有的
 
-```markdown
-类型判断：typeof；
-实例判断：instanceof；
-属性判断：in；
-字面量相等判断：==，===，!=，!==；
-```
+
+> 类型判断：typeof；
+> 实例判断：instanceof；
+> 属性判断：in；
+> 字面量相等判断：==，===，!=，!==；
+
 
 它们在代码书写的时候都将通过if else和switch起到一定的类型守卫的作用，ts也可以对所参与的变量起到一个类型收窄的作用。
 
@@ -445,12 +447,11 @@ const foo = (arg?: T1 | T2) => {
 
 ### 小结
 
-```markdown
-类型守卫的核心是将类型收窄，可以将类型收窄成它的子类型
-可以灵活的使用js中的相关内容对一个类型做相应的收窄
-断言只能在上下级类型断言！不可以在没有上下级关系的类型之间断言，相关的区别会在本文中的断言中做详细介绍。
-断言属于欺骗编译器的行为，并不会在运行过程中起作用，在开发中不可以盲目断言！更推荐于使用if else加is去做一个逻辑层的类型守卫。
-```
+
+> 类型守卫的核心是将类型收窄，可以将类型收窄成它的子类型
+> 可以灵活的使用js中的相关内容对一个类型做相应的收窄
+> 断言只能在上下级类型断言！不可以在没有上下级关系的类型之间断言，相关的区别会在本文中的断言中做详细介绍。
+> 断言属于欺骗编译器的行为，并不会在运行过程中起作用，在开发中不可以盲目断言！更推荐于使用if else加is去做一个逻辑层的类型守卫。
 
 ## 1.3 any、unknown、never
 
@@ -595,13 +596,13 @@ const foo = (type: NoYes) => {
 
 ### 小结
 
-```markdown
-介绍到这里，或许大家可以对any，unknown与never有一个了解，在使用的时候也有相应的几点建议：
-减少未知类型的出现，少写甚至不写any；
-对类型的声明要做到准确，避免隐式类型；
-对never类型能够做合理拦截；
-对于unknown类型能够做出合理的类型收窄；
-```
+
+> 介绍到这里，或许大家可以对any，unknown与never有一个了解，在使用的时候也有相应的几点建议：
+> 减少未知类型的出现，少写甚至不写any；
+> 对类型的声明要做到准确，避免隐式类型；
+> 对never类型能够做合理拦截；
+> 对于unknown类型能够做出合理的类型收窄；
+
 
 ## 1.4 联合undefined 与可选在实际使用过程中的区别
 
@@ -658,10 +659,9 @@ delete obj5.c // error!!
 
 ### 小结
 
-```markdown
-开发过程中对非基础类型中的undefined属性定义要合理
-为了减少可选类型对维护的时候带来的误解，可以使用| undefined来代替可选
-```
+
+>开发过程中对非基础类型中的undefined属性定义要合理
+>为了减少可选类型对维护的时候带来的误解，可以使用| undefined来代替可选
 
 ## 1.5 object、Object与{}
 
@@ -713,10 +713,9 @@ interface ObjectConstructor {
 object相当于就是将Object定义成一个基本类型。
 object与Object的各有以下特点：
 
-```markdown
-object是ts内部定义的基本类型，表示的是非基本类型，不可被重写；
-Object类型为lib.d.ts中声明的非基本类型，可以被改写
-```
+
+> object是ts内部定义的基本类型，表示的是非基本类型，不可被重写；
+> Object类型为lib.d.ts中声明的非基本类型，可以被改写
 
 ### 1.5.3 Object是所有的非基本类型的父类型
 
@@ -737,11 +736,10 @@ p.hasOwnProperty('a'); //ok! Object上有这个方法
 
 ### 小结
 
-```markdown
-object是基本类型，它表示非基本类型Object
-不建议将变量类型直接声明为object或Object，除非真的只用object的原型属性
-ObjectConstructor有一些方法类型定义不够准确，可以尝试去改写它
-```
+
+> object是基本类型，它表示非基本类型Object
+> 不建议将变量类型直接声明为object或Object，除非真的只用object的原型属性
+> ObjectConstructor有一些方法类型定义不够准确，可以尝试去改写它
 
 ## 1.6 interface 和 type  自定义类型
 
@@ -1022,14 +1020,14 @@ type T3 = `${'top' | 'bottom'}-${'left' | 'right'}`;
 
 为了字符串模板类型这个功能， TS 中新增了四个关键字，用于对模板字符串变量进行处理
 
-```markdown
--  uppercase — 大写字母
-- lowercase — 小写字母
-- capitalize — 首字母大写 
-- uncapitalize — 首字母小写 
-type Cases<T extends string> = `${uppercase T} ${lowercase T} ${capitalize T} ${uncapitalize T}`;
-type T11 = Cases<'bar'>;  // 'BAR bar Bar bar'
-```
+
+> -  uppercase — 大写字母
+> - lowercase — 小写字母
+> - capitalize — 首字母大写 
+> - uncapitalize — 首字母小写 
+> type Cases<T extends string> = `${uppercase T} ${lowercase T} ${capitalize T} ${uncapitalize T}`;
+> type T11 = Cases<'bar'>;  // 'BAR bar Bar bar'
+
 
 ### 1.9.3  实现类似于正则匹配提取的功能
 
@@ -1067,9 +1065,7 @@ type PropType<T, Path extends string> = string extends Path ? unknown :
     Path extends `${infer K}.${infer R}` ? K extends keyof T ? PropType<T[K], R> : unknown :
     unknown;
 declare function get<T, P extends string>(obj: T, path: P): PropType<T, P>;
-```
 
-```typescript
 const obj = { a: { b: {c: 42, d: 'hello' }}};
 
 const value = get(obj, "a.b.c")
