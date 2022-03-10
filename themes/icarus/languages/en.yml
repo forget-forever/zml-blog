@@ -26,8 +26,10 @@ widget:
     adsense: 'Advertisement'
     followit: 'follow.it'
 article:
-    created_at: 'Posted&nbsp;%s'
-    updated_at: 'Updated&nbsp;%s'
+    # created_at: 'Posted&nbsp;%s'
+    # updated_at: 'Updated&nbsp;%s'
+    created_at: ''
+    updated_at: ''
     more: 'Read more'
     comments: 'Comments'
     read_time: '%s read'
@@ -49,7 +51,8 @@ donate:
     buymeacoffee: 'Buy me a coffee'
 plugin:
     backtotop: 'Back to top'
-    visit_count: '%s&nbsp;visits'
+    # visit_count: '%s&nbsp;visits'
+    visit_count: ''
     visitor_count: 'Visited by %s users'
     cookie_consent:
       message: This website uses cookies to improve your experience.
