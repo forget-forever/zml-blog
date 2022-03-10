@@ -1,7 +1,7 @@
 ---
 title: 你不知道的TypeScript
 date: 2022-03-06 15:14:33
-tags: -typescript -基础知识
+tags: typescript
 description: 总结ts的类型层级、枚举、断言等相关知识，更加深入的了解typescript， 让typescript更好的服务于日常的开发，提高开发效率。
 ---
 # 基础概括
@@ -26,6 +26,8 @@ json ={
 ```
 
 所以说这个时候就需要有一个对象可以来将这些状态为做一个集中管理了。
+
+<!--more-->
 
 ### 1.1.2 基础用法
 
