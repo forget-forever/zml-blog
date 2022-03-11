@@ -144,12 +144,6 @@ article:
     # Whether to show updated time. For "auto", shows article update time only when page.updated is set and it is different from page.date
     # update_time: true
     # 
-    created_at: false
-    # updated_at
-    updated_at: false
-    # visit_count:
-    visit_count: false
-    # Article licensing block
     licenses:
         Creative Commons:
             icon: fab fa-creative-commons
@@ -273,14 +267,14 @@ widgets:
         # Maximum level of headings to show (1-6)
         depth: 3
     # Recommendation links widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: links
-        # Names and URLs of the sites
-        links:
-            Hexo: https://hexo.io
-            Bulma: https://bulma.io
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: left
+    #     type: links
+    #     # Names and URLs of the sites
+    #     links:
+    #         Hexo: https://hexo.io
+    #         Bulma: https://bulma.io
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -302,23 +296,23 @@ widgets:
         position: left
         type: tags
     # Google FeedBurner email subscription widget configurations
-    -
+    # -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: subscribe_email
+        # position: left
+        # type: subscribe_email
         # Hint text under the email input
-        description: 
+        # description: 
         # Feedburner ID
-        feedburner_id: ''
+        # feedburner_id: ''
     # Google AdSense unit configurations
-    -
+    # -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: adsense
+        # position: left
+        # type: adsense
         # AdSense client ID
-        client_id: '124'
+        # client_id: ''
         # AdSense AD unit ID
-        slot_id: '132'
+        # slot_id: ''
     # Follow.it email subscription widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
