@@ -160,10 +160,10 @@ search:
     type: insight
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
-comment:
-    type: disqus
-    # Disqus shortname
-    shortname: 'Write down silence, write down forgetfulness, write down the departure tomorrow morning'
+# comment:
+#     type: disqus
+#     # Disqus shortname
+#     shortname: 'Write down silence, write down forgetfulness, write down the departure tomorrow morning'
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:

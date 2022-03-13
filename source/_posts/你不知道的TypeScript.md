@@ -1,7 +1,7 @@
 ---
 title: 你不知道的TypeScript
-date: 2022-03-06 15:14:33
-tags: typescript
+date: 2021-11-11 15:14:33
+tags: [typescript, ts基础, 前端]
 description: 总结ts的类型层级、枚举、断言等相关知识，更加深入的了解typescript， 让typescript更好的服务于日常的开发，提高开发效率。
 ---
 # 基础概括
