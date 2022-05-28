@@ -132,6 +132,7 @@ footer:
 article:
     # Code highlight settings
     highlight:
+        enable: true  #开启代码块⾼亮
         # Code highlight themes
         # https://github.com/highlightjs/highlight.js/tree/master/src/styles
         theme: atom-one-light
