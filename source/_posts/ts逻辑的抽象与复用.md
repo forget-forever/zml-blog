@@ -5,8 +5,8 @@ tags: [typescript, 泛型, 抽象]
 ---
 
 ### ts类型
-&emsp;&emsp;写过ts的人应该都对类型有这一个比较深刻的认识
-&emsp;&emsp;在ts中，要求的是每一个变量都必须要有类型
+&nbsp; &nbsp; 写过ts的人应该都对类型有这一个比较深刻的认识
+&nbsp; &nbsp; 在ts中，要求的是每一个变量都必须要有类型
 
 <!--more-->
 
