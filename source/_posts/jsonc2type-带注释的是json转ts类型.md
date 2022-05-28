@@ -8,6 +8,9 @@ tags: [jsonc, ts类型, npm包]
 在做一个脚手架工具的时候想把带注释的json数据转化成ts类型，网上找了很多的js包，都没有找到合适的包。
 本来typeofJsonc挺好用的，但是它转化出来的类型是一个分散的类型
 这样的jsonc数据
+
+<!--more-->
+
 ```typescript
 {
     // 属性带双引号
@@ -30,7 +33,6 @@ tags: [jsonc, ts类型, npm包]
 }
 ```
 
-<!--more-->
 会被转成这样的typescript类型
 ```typescript
 export interface ReqBodyOther {
