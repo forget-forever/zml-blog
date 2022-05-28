@@ -7,7 +7,7 @@
         "cdn": {
             "type": "string",
             "description": "Name or URL template of the JavaScript and/or stylesheet CDN provider",
-            "default": "jsdelivr",
+            "default": "bootcdn",
             "nullable": true
         },
         "fontcdn": {

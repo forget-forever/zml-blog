@@ -230,7 +230,7 @@ widgets:
         # Author title
         author_title: hello world!
         # Author's current location
-        location: BeiJing.China
+        location: BeiJing, China
         # URL or path to the avatar image
         avatar: 
         # Whether show the rounded avatar image
@@ -404,7 +404,7 @@ plugins:
 # https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
 providers:
     # Name or URL template of the JavaScript and/or stylesheet CDN provider
-    cdn: jsdelivr
+    cdn: bootcdn
     # Name or URL template of the webfont CDN provider
     fontcdn: google
     # Name or URL of the fontawesome icon font CDN provider
