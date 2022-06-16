@@ -16,9 +16,9 @@ const foo = (arg1: string, arg2: number) => {
     // do something
 }
 ```
-&emsp;&emsp;在函数声明时，它的所有的参数都是需要我们去声明类型的，如果说我们没有没有指定类型，那它是会报错的。(当然你可以配置noImplicitAny来让ts的隐式any类型不报错，但是这样的话写ts的意义又在哪里呢)
+在函数声明时，它的所有的参数都是需要我们去声明类型的，如果说我们没有没有指定类型，那它是会报错的。(当然你可以配置noImplicitAny来让ts的隐式any类型不报错，但是这样的话写ts的意义又在哪里呢)
 
-&emsp;&emsp;同时对于函数的返回值，ts在这个时候会对返回值做了一次推导，可以自动检测出函数的返回值的类型。
+同时对于函数的返回值，ts在这个时候会对返回值做了一次推导，可以自动检测出函数的返回值的类型。
 ```typescript
 const foo1 = (arg: string | number) ) => {
     return 1;

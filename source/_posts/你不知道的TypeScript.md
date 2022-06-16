@@ -3,6 +3,7 @@ title: 你不知道的TypeScript
 date: 2021-11-11 15:14:33
 tags: [typescript, ts基础, 前端]
 description: 总结ts的类型层级、枚举、断言等相关知识，更加深入的了解typescript， 让typescript更好的服务于日常的开发，提高开发效率。
+toc: true
 ---
 # 基础概括
 
@@ -1059,7 +1060,8 @@ const obj = { a: { b: {c: 42, d: 'hello' }}};
 const value = get(obj, "a.b.c")
 ```
 
-# 2、TypeScript 4.1 带来的这个新功能让 TS 支持更多字符串相关的拼接场景，其实是特别实用的，希望大家能够有所收获~
+# 2、TypeScript 4.1 带来的这个新功能
+让 TS 支持更多字符串相关的拼接场景，其实是特别实用的，希望大家能够有所收获~
 
 ## 2.1 断言
 
