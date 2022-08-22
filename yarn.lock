@@ -1792,12 +1792,15 @@ hexo-cli@^4.0.0:
     resolve "^1.11.0"
     tildify "^2.0.0"
 
-hexo-component-inferno@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/hexo-component-inferno/-/hexo-component-inferno-1.1.0.tgz#b9176fb501728fbd1f50f125b49fa42511b1ba89"
-  integrity sha512-oLiPxrhO/KMU4kGrgVAF3R4DWdRjMXiD7qV7rDaSaMpADP4Nq0EJGvHVas4rzzx2WTQ5AZpGyB74jNV60PKfMA==
+hexo-component-inferno@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/hexo-component-inferno/-/hexo-component-inferno-2.0.1.tgz#34c460209b4f0366a910cb2d57513ab7639a3718"
+  integrity sha512-czg2r7unN1o1jcU6B2aT8I7r0nu8qxJeb7g5cwcm1q+W079712/8c5EGmR21sD7gCAW9MUDylLc01GZmFAQv4Q==
   dependencies:
     ajv "^8.8.2"
+    hexo "^6.0.0"
+    hexo-pagination "^2.0.0"
+    hexo-util "^2.2.0"
     inferno "^7.3.3"
     inferno-create-element "^7.3.3"
     js-yaml "^4.1.0"
@@ -1946,10 +1949,10 @@ hexo-theme-landscape@^0.0.3:
   resolved "https://registry.npm.taobao.org/hexo-theme-landscape/-/hexo-theme-landscape-0.0.3.tgz#87d1f4d613da9be5245dad0d4b80479eab70d386"
   integrity sha512-b0Di+TUVs4ESrNX4ULEh9uQmADpO6kr10rIJ2OGZM8suNQNFKdxn+vJUjnLfKkCPJAfVmS7/S83KCNYe4tpoNw==
 
-hexo-util@^2.0.0, hexo-util@^2.4.0, hexo-util@^2.5.0:
-  version "2.6.0"
-  resolved "https://registry.npm.taobao.org/hexo-util/-/hexo-util-2.6.0.tgz#3265aa1b1983e48345a2af59c6785ac061886075"
-  integrity sha512-sLG45foxXMnMgCo3FpP4Sicj5nLD6ezO46+DKP01BWj1CfNq2pYoUdJacfeVbKc+oFtitRcNIGsPNNt3pVbzdg==
+hexo-util@^2.0.0, hexo-util@^2.2.0, hexo-util@^2.4.0, hexo-util@^2.5.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/hexo-util/-/hexo-util-2.7.0.tgz#13d09292e79d260db35399710b3e19f3995443a3"
+  integrity sha512-hQM3h34nhDg0bSe/Tg1lnpODvNkz7h2u0+lZGzlKL0Oufp+5KCAEUX9wal7/xC7ax3/cwEn8IuoU75kNpZLpJQ==
   dependencies:
     bluebird "^3.5.2"
     camel-case "^4.0.0"
